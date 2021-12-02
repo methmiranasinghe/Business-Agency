@@ -286,37 +286,42 @@
 
 
   /* Section-2 */
-.section-2{
-  width: 100%;
-  height: 100vh;
-  background-color: #222020;
-  display: flex;
-  align-items: center;
-  padding: 0 10rem;
-  position: relative;
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #222020;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    position: relative;
+}
+  
+.section-heading {
+    font-size: 10rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    margin-right: 4rem;
 }
 
-.section-heading{
-  font-family: "Oswald",sans-serif;
-  font-size: 8rem;
-  font-weight: 300;
-  color: #ddd;
-  margin-right: 4rem;
-}
-
-.section-heading-line{
-  width:15rem;
+.section-heading-line {
+  width: 15rem;
   height: 0.2rem;
   background-color: #ddd;
- 
 }
-.video-wrapper{
+
+.video-wrapper {
   width: 100rem;
   height: 50rem;
   position: absolute;
   top: 5rem;
-  right:15rem;
+  right: 15rem;
+  box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
 
+.video-wrapper:hover .controls {
+  transform: translateY(0);
 }
 .video{
   width: 100%;
@@ -325,34 +330,37 @@
   opacity: 0.3;
 
 }
-
 .controls{
   width: 100%;
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
+  transform: translateY(calc(100%-0.4rem));
+  transition: transform 0.4s;
 }
 
-.video-bar-wrapper{
+
+.video-bar-wrapper {
   width: 100%;
   height: 0.7rem;
   background-color: #000;
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
-.video-bar{
+.video-bar {
   height: 100%;
-  width: 20%;
+  width: 0;
   background-color: #d30819;
-}
-.buttons{
-  padding: 2rem 1rem  1rem 1rem;
+  transition: width 0.2s linear;
 }
 
-.buttons button{
+.buttons {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.buttons button {
   background: none;
   border: none;
   cursor: pointer;
@@ -373,7 +381,31 @@
   border-top:0.3rem double #aaa ;
   border-bottom: 0.3rem double #aaa;
   padding: 2rem;
-  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
+  line-height: 1.5;
 }
+
+.fa-quote-left{
+  align-self: flex-start;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.fa-quote-right{
+  align-self: flex-end;
+  font-size: 5rem;
+
+}
+
+
+
+
+
+
 
   /* End of Section -2 */
