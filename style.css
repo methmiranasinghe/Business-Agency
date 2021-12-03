@@ -285,23 +285,23 @@
   /* End of Section 1 */
 
 
-  /* Section-2 */
+/* Section 2 */
 .section-2 {
-    width: 100%;
-    height: 100vh;
-    background-color: #222020;
-    display: flex;
-    align-items: center;
-    padding: 0 10rem;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #222020;
+  display: flex;
+  align-items: center;
+  padding: 0 10rem;
+  position: relative;
 }
-  
+
 .section-heading {
-    font-size: 10rem;
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
-    color: #ddd;
-    margin-right: 4rem;
+  font-size: 10rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  color: #ddd;
+  margin-right: 4rem;
 }
 
 .section-heading-line {
@@ -323,22 +323,23 @@
 .video-wrapper:hover .controls {
   transform: translateY(0);
 }
-.video{
+
+.video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
+  transition: opacity 0.3s;
+} 
 
-}
-.controls{
+.controls {
   width: 100%;
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  transform: translateY(calc(100%-0.4rem));
+  transform: translateY(calc(100% - 0.4rem));
   transition: transform 0.4s;
 }
-
 
 .video-bar-wrapper {
   width: 100%;
@@ -366,46 +367,43 @@
   cursor: pointer;
 }
 
-.buttons i{
+.buttons i {
+  width: 3rem;
+  height: 3rem;
   font-size: 2.8rem;
   color: #fff;
 }
 
-.section-2-paragraph{
+.section-2-paragraph {
   width: 100rem;
   position: absolute;
   bottom: 8rem;
   right: 15rem;
   font-size: 2rem;
-  color:#ddd;
-  border-top:0.3rem double #aaa ;
+  line-height: 1.5;
+  color: #ddd;
+  border-top: 0.3rem double #aaa;
   border-bottom: 0.3rem double #aaa;
   padding: 2rem;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
   text-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7);
-  line-height: 1.5;
 }
 
-.fa-quote-left{
+.fa-quote-left {
   align-self: flex-start;
   font-size: 5rem;
+  color: #bbb;
   margin-bottom: 2rem;
 }
 
-.fa-quote-right{
+.fa-quote-right {
   align-self: flex-end;
   font-size: 5rem;
-
+  color: #bbb;
 }
 
-
-
-
-
-
-
-  /* End of Section -2 */
+/* End of Section 2 */
