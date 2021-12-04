@@ -285,6 +285,7 @@
   /* End of Section 1 */
 
 
+
 /* Section 2 */
 .section-2 {
   width: 100%;
@@ -330,7 +331,7 @@
   object-fit: cover;
   opacity: 0.3;
   transition: opacity 0.3s;
-} 
+}
 
 .controls {
   width: 100%;
@@ -348,13 +349,14 @@
   position: absolute;
   top: 0;
   left: 0;
+  
 }
 
 .video-bar {
   height: 100%;
   width: 0;
   background-color: #d30819;
-  transition: width 0.2s linear;
+ transition: width 0.2s linear; 
 }
 
 .buttons {
